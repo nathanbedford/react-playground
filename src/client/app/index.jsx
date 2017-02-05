@@ -1,16 +1,9 @@
 import React from 'react';
-import {render} from 'react-dom';
-import AwesomeComponent from './AwesomeComponent'
+import ReactDOM from 'react-dom';
+import Game from './Game'
 
-class App extends React.Component {
-    render() {
-        return (
-            <div>
-                <p> Hello React!</p>
-                <AwesomeComponent />
-            </div>
-        );
-    }
-}
-
-render(<App/>, document.getElementById('app'));
+// ========================================
+ReactDOM.render(
+    <Game />,
+    document.getElementById('container')
+);
